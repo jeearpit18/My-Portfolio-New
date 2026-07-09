@@ -136,43 +136,43 @@ const Services = () => {
           />
         </svg>
 
-        {/* Mobile Animated Vertical Dashed Line */}
-        <svg 
-          className="md:hidden absolute top-0 left-[50%] -translate-x-1/2 w-4 h-[100%] pointer-events-none z-0" 
-          viewBox="0 0 4 100" 
-          preserveAspectRatio="none"
-        >
-          <path 
-            d="M 2,0 L 2,100" 
-            fill="none" 
-            stroke="#cbd5e1" 
-            strokeWidth="4" 
-            strokeDasharray="4 6" 
-            vectorEffect="non-scaling-stroke"
-          />
-          <mask id="path-mask-mobile">
-            <motion.path 
+        {/* Cards Container */}
+        <div className="flex flex-col gap-8 md:gap-12 items-center md:block relative z-10 w-full mt-12 md:mt-0 pt-4 md:pt-0 pb-12 md:pb-0">
+          
+          {/* Mobile Animated Vertical Dashed Line */}
+          <svg 
+            className="md:hidden absolute top-0 left-[50%] -translate-x-1/2 w-4 h-full pointer-events-none z-0" 
+            viewBox="0 0 4 100" 
+            preserveAspectRatio="none"
+          >
+            <path 
               d="M 2,0 L 2,100" 
               fill="none" 
-              stroke="white" 
+              stroke="#cbd5e1" 
               strokeWidth="4" 
-              style={{ pathLength }}
+              strokeDasharray="4 6" 
               vectorEffect="non-scaling-stroke"
             />
-          </mask>
-          <path 
-            d="M 2,0 L 2,100" 
-            fill="none" 
-            stroke="black" 
-            strokeWidth="4" 
-            strokeDasharray="4 6" 
-            mask="url(#path-mask-mobile)"
-            vectorEffect="non-scaling-stroke"
-          />
-        </svg>
-
-        {/* Cards Container */}
-        <div className="flex flex-col gap-8 md:gap-12 items-center md:block relative z-10 w-full pt-4 md:pt-0 pb-12 md:pb-0">
+            <mask id="path-mask-mobile">
+              <motion.path 
+                d="M 2,0 L 2,100" 
+                fill="none" 
+                stroke="white" 
+                strokeWidth="4" 
+                style={{ pathLength }}
+                vectorEffect="non-scaling-stroke"
+              />
+            </mask>
+            <path 
+              d="M 2,0 L 2,100" 
+              fill="none" 
+              stroke="black" 
+              strokeWidth="4" 
+              strokeDasharray="4 6" 
+              mask="url(#path-mask-mobile)"
+              vectorEffect="non-scaling-stroke"
+            />
+          </svg>
           
           {skillsContent.cards.map((card, index) => {
             const positions = [
