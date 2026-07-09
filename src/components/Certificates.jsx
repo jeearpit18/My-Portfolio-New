@@ -34,7 +34,7 @@ const CertificateCard = ({ cert, aosDelay }) => {
 
 const Certificates = () => {
   return (
-    <section
+    <section data-theme="dark"
       id="certificates"
       className="bg-[#ff2a2a] pt-20 pb-28 px-6 md:px-12 w-full relative overflow-hidden font-sans"
     >
@@ -64,7 +64,7 @@ const Certificates = () => {
           ))}
         </div>
 
-        {certificates.documentUrl && (
+        {certificates.showResumeDownload && certificates.documentUrl && (
           <div data-aos="fade-up" data-aos-delay="700" className="flex justify-center">
             <a
               href={certificates.documentUrl}

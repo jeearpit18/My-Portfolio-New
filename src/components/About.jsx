@@ -22,7 +22,7 @@ const FocusBadge = ({ label, code, delay }) => (
 
 const About = () => {
   return (
-    <section
+    <section data-theme="dark"
       id="about"
       className="bg-[#ff2a2a] pt-20 pb-40 px-6 md:px-12 w-full relative overflow-hidden font-sans"
     >

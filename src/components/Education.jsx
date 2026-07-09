@@ -2,7 +2,7 @@ import { education } from '../data/portfolioData';
 
 const Education = () => {
   return (
-    <section
+    <section data-theme="light"
       id="education"
       className="bg-white pt-24 pb-32 px-6 md:px-12 w-full relative overflow-hidden font-sans bg-[linear-gradient(to_right,#80808008_1px,transparent_1px),linear-gradient(to_bottom,#80808008_1px,transparent_1px)] bg-[size:70px_70px]"
     >

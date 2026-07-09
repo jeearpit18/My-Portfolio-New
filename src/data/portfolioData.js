@@ -30,7 +30,7 @@ export const heroContent = {
     text: 'Contact Me',
     href: `mailto:${personalInfo.emails.primary}?subject=Hiring Inquiry - Portfolio&body=Hello Arpit,%0D%0A%0D%0AI came across your portfolio and would like to discuss an opportunity with you.%0D%0A%0D%0ALooking forward to hearing from you.%0D%0ABest Regards,`,
   },
-  ctaResume: { text: 'Download Resume', href: personalInfo.resumeUrl },
+  ctaResume: { text: 'Request Resume', href: `mailto:${personalInfo.emails.primary}?subject=Resume Request&body=Hi Arpit,%0D%0A%0D%0AI came across your portfolio and would like to request your latest resume.%0D%0A%0D%0AThanks,%0D%0A[Your Name]` },
 };
 
 export const aboutContent = {
@@ -347,6 +347,7 @@ export const projects = [
 ];
 
 export const certificates = {
+  showResumeDownload: false,
   featured: [
     {
       name: 'AWS Student Builder Campus Leader',
