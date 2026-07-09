@@ -347,7 +347,7 @@ export const projects = [
 ];
 
 export const certificates = {
-  showResumeDownload: false,
+  showResumeDownload: true,
   featured: [
     {
       name: 'AWS Student Builder Campus Leader',
